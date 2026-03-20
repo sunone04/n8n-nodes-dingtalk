@@ -7,6 +7,19 @@ type RequestExtras = {
 };
 
 const DEFAULT_BASE_URL = 'https://api.dingtalk.com/v1.0';
+const MASK = '***';
+
+function maskToken(value: unknown): string {
+  if (typeof value !== 'string' || !value) {
+    return MASK;
+  }
+
+  if (value.length <= 8) {
+    return MASK;
+  }
+
+  return `${value.slice(0, 4)}...${value.slice(-4)}`;
+}
 
 function isAbsoluteUrl(u?: string): boolean {
   return !!u && /^https?:\/\//i.test(u);
@@ -88,7 +101,8 @@ async function originRequest(
     headers: Object.keys(mergedOptions.headers),
     json: mergedOptions.json,
     body: mergedOptions.body,
-    accessToken: credentials.accessToken,
+    hasAccessToken: Boolean(credentials.accessToken),
+    accessTokenPreview: credentials.accessToken ? maskToken(credentials.accessToken) : undefined,
     clearAccessToken,
   });
 

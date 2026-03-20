@@ -55,7 +55,6 @@ export class DingtalkNodeTrigger implements INodeType {
         displayName: 'Event',
         name: 'event',
         type: 'options',
-        // eslint-disable-next-line n8n-nodes-base/node-param-default-wrong-for-options
         default: 'stream.push',
         options: triggerDefinitions.map((def) => ({
           name: def.name,

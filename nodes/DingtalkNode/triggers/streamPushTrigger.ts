@@ -1,4 +1,3 @@
-/* eslint-disable @n8n/community-nodes/no-restricted-globals */
 import {
   NodeOperationError,
   type CronExpression,
@@ -15,6 +14,7 @@ const USER_AGENT = 'n8n-nodes-dingtalk-trigger';
 const CLIENT_PING_INTERVAL_SECONDS = 30;
 const CRON_EXPRESSION: CronExpression = `*/${CLIENT_PING_INTERVAL_SECONDS} * * * * *`;
 const DEBUG_STREAM = false;
+const DEDUPE_TTL_MS = 10 * 60 * 1000;
 
 interface DingtalkCredentials {
   clientId?: string;
@@ -49,6 +49,10 @@ interface GatewayResponse {
   ticket: string;
   expiryTime?: number;
 }
+
+type SeenMessage = {
+  expiresAt: number;
+};
 
 function safeParse(payload: string | undefined): unknown {
   if (typeof payload !== 'string') {
@@ -98,6 +102,53 @@ export async function runStreamPushTrigger(
   let manualResolve: (() => void) | null = null;
   let reconnectQueued = false;
   let cronRegistered = false;
+  const seenMessageIds = new Map<string, SeenMessage>();
+
+  const now = () => Date.now();
+
+  const cleanupSeenMessageIds = () => {
+    const currentTime = now();
+    for (const [id, entry] of seenMessageIds.entries()) {
+      if (entry.expiresAt <= currentTime) {
+        seenMessageIds.delete(id);
+      }
+    }
+  };
+
+  const getMessageDeduplicationKey = (message: DownstreamMessage): string | null => {
+    const topic = message.headers.topic || '';
+    const messageId = message.headers.messageId || '';
+    const eventId = message.headers.eventId || '';
+    const connectionId = message.headers.connectionId || '';
+
+    const stableId = eventId || messageId;
+    if (!stableId) {
+      return null;
+    }
+
+    return `${message.type}:${topic}:${connectionId}:${stableId}`;
+  };
+
+  const shouldEmitMessage = (message: DownstreamMessage): boolean => {
+    cleanupSeenMessageIds();
+
+    const key = getMessageDeduplicationKey(message);
+    if (!key) {
+      return true;
+    }
+
+    if (seenMessageIds.has(key)) {
+      logDebug('DingTalk stream duplicate skipped', {
+        topic: message.headers.topic,
+        messageId: message.headers.messageId,
+        eventId: message.headers.eventId,
+      });
+      return false;
+    }
+
+    seenMessageIds.set(key, { expiresAt: now() + DEDUPE_TTL_MS });
+    return true;
+  };
 
   const resolveManualIfPending = () => {
     if (manualResolve) {
@@ -173,7 +224,9 @@ export async function runStreamPushTrigger(
 
   // For normal events we emit and immediately ACK SUCCESS.
   const handleEventMessage = (message: DownstreamMessage) => {
-    emitMessage(message);
+    if (shouldEmitMessage(message)) {
+      emitMessage(message);
+    }
 
     sendEventAck(message.headers, { status: 'SUCCESS' });
   };
@@ -431,6 +484,7 @@ export async function runStreamPushTrigger(
 
   const onCronTick = () => {
     if (!shouldStayConnected) return;
+    cleanupSeenMessageIds();
     sendClientPing();
     if (!connectInProgress && (!socket || socket.readyState === WebSocket.CLOSED)) {
       logDebug('DingTalk stream reconnect due; starting new connection');
