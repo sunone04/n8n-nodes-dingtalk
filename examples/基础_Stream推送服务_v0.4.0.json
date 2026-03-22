@@ -3,7 +3,7 @@
   "nodes": [
     {
       "parameters": {},
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNodeTrigger",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNodeTrigger",
       "typeVersion": 1,
       "position": [
         464,

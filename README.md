@@ -1,13 +1,13 @@
 # 钉钉 n8n 节点 (DingTalk n8n Node)
 
-[![npm version](https://badge.fury.io/js/@cryozerolabs%2Fn8n-nodes-dingtalk.svg)](https://badge.fury.io/js/@cryozerolabs%2Fn8n-nodes-dingtalk)
+[![npm version](https://badge.fury.io/js/@sunone04%2Fn8n-nodes-dingtalk.svg)](https://badge.fury.io/js/@sunone04%2Fn8n-nodes-dingtalk)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 这是一个钉钉（DingTalk）的 n8n 社区节点，让你可以在 n8n 工作流中集成钉钉开放平台的各种 API。
 
 钉钉是阿里巴巴集团打造的企业级智能移动办公平台，为全球企业组织提供一站式的数字化办公解决方案。本节点基于钉钉开放平台 API 开发，支持 Stream模式监听事件订阅、AI 表格、钉钉机器人、OA审批、文档、用户管理、身份验证等核心功能。
 
-> ⚡ 使用教程、最佳实践等详尽说明请访问项目 Wiki：<https://github.com/cryozerolabs/n8n-nodes-dingtalk/wiki>
+> ⚡ 使用教程、最佳实践等详尽说明请访问项目 Wiki：<https://github.com/sunone04/n8n-nodes-dingtalk/wiki>
 
 ## 📖 目录
 
@@ -114,7 +114,7 @@
 1. 打开你的 n8n 实例
 2. 进入 **设置** → **社区节点**
 3. 选择 **安装社区节点**
-4. 输入包名：`@cryozerolabs/n8n-nodes-dingtalk`
+4. 输入包名：`@sunone04/n8n-nodes-dingtalk`
 5. 点击 **安装**
 
 更多安装详情请参考 [n8n 社区节点安装指南](https://docs.n8n.io/integrations/community-nodes/installation/)。
@@ -196,7 +196,7 @@
 
 所有示例工作流都存放在 `examples/` 目录中，你可以：
 
-**直接下载单个文件**：访问 [examples 目录](https://github.com/cryozerolabs/n8n-nodes-dingtalk/tree/main/examples) 下载需要的 JSON 文件
+**直接下载单个文件**：访问 [examples 目录](https://github.com/sunone04/n8n-nodes-dingtalk/tree/main/examples) 下载需要的 JSON 文件
 
 ### 示例内容
 
@@ -218,7 +218,7 @@
 ### 已知问题
 
 - 暂无已知的版本兼容性问题
-- 如遇到问题，请提交 [GitHub Issue](https://github.com/cryozerolabs/n8n-nodes-dingtalk/issues)
+- 如遇到问题，请提交 [GitHub Issue](https://github.com/sunone04/n8n-nodes-dingtalk/issues)
 
 ## 📚 相关资源
 
@@ -237,9 +237,9 @@
 
 ### 社区支持
 
-- [GitHub 仓库](https://github.com/cryozerolabs/n8n-nodes-dingtalk)
-- [问题反馈](https://github.com/cryozerolabs/n8n-nodes-dingtalk/issues)
-- [功能请求](https://github.com/cryozerolabs/n8n-nodes-dingtalk/discussions)
+- [GitHub 仓库](https://github.com/sunone04/n8n-nodes-dingtalk)
+- [问题反馈](https://github.com/sunone04/n8n-nodes-dingtalk/issues)
+- [功能请求](https://github.com/sunone04/n8n-nodes-dingtalk/discussions)
 
 ## 📋 版本历史
 
@@ -349,7 +349,7 @@ v0.3.0 重构了 AI 表格记录操作的参数模型，请在升级后逐一检
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/cryozerolabs/n8n-nodes-dingtalk.git
+git clone https://github.com/sunone04/n8n-nodes-dingtalk.git
 cd n8n-nodes-dingtalk
 
 # 2. 安装 n8n-node 开发工具（如果尚未安装）

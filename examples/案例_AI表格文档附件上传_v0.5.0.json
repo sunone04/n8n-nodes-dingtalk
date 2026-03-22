@@ -17,7 +17,7 @@
         "resource": "notable",
         "operation": "notable.parseUrl"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         704,
@@ -143,7 +143,7 @@
         "operation": "doc.resource.upload",
         "docId": "gvNG4YZ7JnkovqmwFZX41RPl82LD0oRE"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1552,
@@ -158,7 +158,7 @@
         "operation": "doc.resource.upload",
         "docId": "gvNG4YZ7JnkovqmwFZX41RPl82LD0oRE"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1552,
@@ -334,7 +334,7 @@
           "convertFieldsToString": false
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1936,
@@ -459,7 +459,7 @@
           "convertFieldsToString": false
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1936,

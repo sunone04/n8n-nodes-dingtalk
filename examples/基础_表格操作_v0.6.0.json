@@ -64,7 +64,7 @@
           "mode": "url"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [464, -256],
       "id": "a0780865-348d-41cb-b140-609e62d4ca65",
@@ -81,7 +81,7 @@
         },
         "name": "={{ $now.toMillis() }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [848, -256],
       "id": "aaace46d-b2f7-40cc-a87b-d1398d6fa946",
@@ -103,7 +103,7 @@
           "cachedResultName": "Sheet1"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [656, -256],
       "id": "3be31af1-6bf9-4852-98b2-97246d168753",
@@ -124,7 +124,7 @@
           "mode": "id"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [1056, -256],
       "id": "60ff621a-b5ab-4db0-8355-29a87be42e49",
@@ -147,7 +147,7 @@
         },
         "rowCount": 2
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [464, 0],
       "id": "7afcd7ff-a919-4f26-9b9a-adced66d9421",
@@ -169,7 +169,7 @@
         },
         "visibility": "hidden"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [656, 0],
       "id": "f2e6a7f0-d318-4bd9-956c-91dd4cea5576",
@@ -191,7 +191,7 @@
         },
         "rowCount": 2
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [848, 0],
       "id": "1cab5395-470d-4bde-8693-8c5177981340",
@@ -213,7 +213,7 @@
         },
         "columnCount": 2
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [1056, 0],
       "id": "245e75a0-eb98-442f-a97d-a529610f09ee",
@@ -235,7 +235,7 @@
         },
         "visibility": "hidden"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [1264, 0],
       "id": "13e32db9-a8ff-4ad2-b87c-da17a1711f08",
@@ -257,7 +257,7 @@
         },
         "columnCount": 2
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [1472, 0],
       "id": "bf7523f7-820e-49ec-9f4c-43006dace70d",
@@ -292,7 +292,7 @@
         },
         "rangeAddress": "A1:A3"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [464, 320],
       "id": "d2dd8000-a1bc-4ff5-8338-7fa0164a92f2",
@@ -315,7 +315,7 @@
         "rangeAddress": "A3:C4",
         "jsonBody": "{\n  \"values\": [\n    [\n      \"李四\",\n      \"24\",\n      \"2004.04.04\"\n    ],\n    [\n      \"王五\",\n      \"25\",\n      \"2005.05.05\"\n    ]\n  ]\n}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [656, 320],
       "id": "edb54ccb-8915-47c0-bdfa-06495fae282d",
@@ -409,7 +409,7 @@
           "convertFieldsToString": false
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [944, 320],
       "id": "17224c74-1740-441f-bbcb-c0558cfab28b",

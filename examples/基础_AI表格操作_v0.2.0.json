@@ -23,7 +23,7 @@
         },
         "name": "={{ $now.toMillis() }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1184,
@@ -38,7 +38,7 @@
         "operation": "notable.parseUrl",
         "url": "https://alidocs.dingtalk.com/i/nodes/baseId?iframeQuery=entrance%3Ddata%26sheetId%3DsheetId%26source%3Dnotable_portal%26viewId%3DviewId&sideCollapsed=true"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         720,
@@ -62,7 +62,7 @@
           "mode": "id"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1520,
@@ -77,7 +77,7 @@
         "operation": "user.get",
         "userId": "0160621554-1383491704"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         528,
@@ -101,7 +101,7 @@
           "mode": "id"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1824,
@@ -120,7 +120,7 @@
           "mode": "id"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1184,
@@ -137,7 +137,7 @@
         "sheetIdOrName": "={{ $json.id }}",
         "name": "={{ $now.toMillis() }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1520,
@@ -261,7 +261,7 @@
           "convertFieldsToString": false
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1184,
@@ -286,7 +286,7 @@
         },
         "recordIds": "={{ $json.value[0].id }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1824,
@@ -311,7 +311,7 @@
         },
         "recordId": "={{ $json.records[0].id }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1536,
@@ -372,7 +372,7 @@
         "resource": "auth",
         "operation": "auth.token.get"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         528,
@@ -396,7 +396,7 @@
           "mode": "id"
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1184,
@@ -413,7 +413,7 @@
         "sheetIdOrName": "={{ $('AI表格 解析URL').item.json.sheetId }}",
         "fieldIdOrName": "={{ $json.id }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1840,
@@ -454,7 +454,7 @@
         },
         "fieldIdOrName": "={{ $json.name }}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1536,
@@ -479,7 +479,7 @@
         },
         "body": "={\n  \"name\": \"{{ $now.toMillis() }}\",\n  \"property\": {\n    \"choices\": [\n      {\n        \"name\": \"完成\"\n      },\n      {\n        \"name\": \"失败\"\n      }\n    ]\n  },\n  \"type\": \"singleSelect\"\n}"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1184,
@@ -605,7 +605,7 @@
           "convertFieldsToString": false
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1536,
@@ -638,7 +638,7 @@
           ]
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1184,

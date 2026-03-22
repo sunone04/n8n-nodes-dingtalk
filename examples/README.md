@@ -28,7 +28,7 @@
 **方法一：通过 URL 导入（推荐）**
 
 ```
-https://raw.githubusercontent.com/cryozerolabs/n8n-nodes-dingtalk/main/examples/[文件名].json
+https://raw.githubusercontent.com/sunone04/n8n-nodes-dingtalk/main/examples/[文件名].json
 ```
 
 **方法二：下载文件导入**
@@ -73,7 +73,7 @@ https://raw.githubusercontent.com/cryozerolabs/n8n-nodes-dingtalk/main/examples/
 1. 检查凭据配置是否正确
 2. 确认钉钉应用权限是否充足
 3. 查看 [主要文档](../README.md)
-4. 提交 [GitHub Issue](https://github.com/cryozerolabs/n8n-nodes-dingtalk/issues)
+4. 提交 [GitHub Issue](https://github.com/sunone04/n8n-nodes-dingtalk/issues)
 
 ## 🔄 持续更新
 

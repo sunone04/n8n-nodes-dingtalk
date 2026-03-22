@@ -18,9 +18,9 @@
         "operation": "robot.ding.send",
         "robotCode": "={{ $(\"config\").item.json.robotCode }}",
         "receiverUserIdList": "={{ $(\"config\").item.json.receiverList.join() }}",
-        "content": "Hi, 这是 @cryozerolabs/n8n-nodes-dingtalk 的测试DING消息"
+        "content": "Hi, 这是 @sunone04/n8n-nodes-dingtalk 的测试DING消息"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         32,
@@ -35,7 +35,7 @@
         "operation": "user.getByMobile",
         "mobile": "13000000000"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         -320,
@@ -80,7 +80,7 @@
         "robotCode": "={{ $('config').item.json.robotCode }}",
         "openDingId": "089C66250AA9D7BBC2B2D712E7D01114"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         608,
@@ -111,9 +111,9 @@
         "robotCode": "={{ $(\"config\").item.json.robotCode }}",
         "remindType": 2,
         "receiverUserIdList": "={{ $(\"config\").item.json.receiverList.join() }}",
-        "content": "Hi, 这是 @cryozerolabs/n8n-nodes-dingtalk 的测试DING消息"
+        "content": "Hi, 这是 @sunone04/n8n-nodes-dingtalk 的测试DING消息"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         208,
@@ -129,9 +129,9 @@
         "robotCode": "={{ $(\"config\").item.json.robotCode }}",
         "remindType": 3,
         "receiverUserIdList": "={{ $(\"config\").item.json.receiverList.join() }}",
-        "content": "Hi, 这是 @cryozerolabs/n8n-nodes-dingtalk 的测试DING消息"
+        "content": "Hi, 这是 @sunone04/n8n-nodes-dingtalk 的测试DING消息"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         416,
@@ -150,7 +150,7 @@
         "messageUrl": "https://www.dingtalk.com",
         "picUrl": "https://img.alicdn.com/tfs/TB1NwmBEL9TBuNjy1zbXXXpepXa-2400-1218.png"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         240,
@@ -167,7 +167,7 @@
         "atMobiles": "13000000000,18666666666",
         "atUserIds": "="
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         32,
@@ -185,7 +185,7 @@
         "text": "=# Markdown消息内容\n> @13000000000 @18666666666",
         "atMobiles": "13000000000,18666666666"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         464,
@@ -205,7 +205,7 @@
         "singleURL": "https://www.dingtalk.com",
         "atMobiles": "13000000000,18666666666"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         672,
@@ -236,7 +236,7 @@
         },
         "atMobiles": "13000000000,18666666666"
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         880,
@@ -265,7 +265,7 @@
           ]
         }
       },
-      "type": "@cryozerolabs/n8n-nodes-dingtalk.dingtalkNode",
+      "type": "@sunone04/n8n-nodes-dingtalk.dingtalkNode",
       "typeVersion": 1,
       "position": [
         1088,

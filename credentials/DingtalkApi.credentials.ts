@@ -17,7 +17,7 @@ export class DingtalkApi implements ICredentialType {
 
   // Link to your community node's README
   documentationUrl =
-    'https://github.com/cryozerolabs/n8n-nodes-dingtalk?tab=readme-ov-file#-%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%85%8D%E7%BD%AE';
+  'https://github.com/sunone04/n8n-nodes-dingtalk?tab=readme-ov-file#-%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E9%85%8D%E7%BD%AE';
 
   properties: INodeProperties[] = [
     {
